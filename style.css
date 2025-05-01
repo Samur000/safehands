@@ -1,12 +1,14 @@
 :root {
-	--primary: #2a4365;
-	--secondary: #1e3656;
-	--accent: #4299e1;
-	--light: #ebf8ff;
-	--dark: #1a365d;
-	--gray: #718096;
-	--success: #48bb78;
+	--primary: #000000;       /* Глубокий черный — основной фон, строгий и элегантный */
+	--secondary: #1a1a1a;     /* Темно-серый для градаций черного */
+	--accent: #A5A27C;        /* Классическое золото (Royal Gold) — для акцентов, кнопок и иконок */
+	--light: #F5F5F5;         /* Светлый фон — для текста или блоков */
+	--dark: #0d0d0d;          /* Глубокий тень/фон */
+	--gray: #A0AEC0;          /* Светло-серый — вторичный текст */
+	--success: #38A169;       /* Зеленый — подтверждение, может остаться универсальным */
+	--danger: #E63946;        /* Красный — ошибки */
 }
+
 
 a {
 	text-decoration: none;
@@ -320,11 +322,13 @@ h1 {
 .benefits-container {
 	display: flex;
 	align-items: center;
+	justify-content: center;	
 	gap: 50px;
 }
 
 .benefits-image {
 	flex: 1;
+	max-width: 500px;
 }
 
 .benefits-image img {
@@ -334,6 +338,7 @@ h1 {
 }
 
 .benefits-content {
+	max-width: 400px;
 	flex: 1;
 }
 
