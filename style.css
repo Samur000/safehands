@@ -1,12 +1,20 @@
 :root {
-	--primary: #000000;       /* Глубокий черный — основной фон, строгий и элегантный */
-	--secondary: #1a1a1a;     /* Темно-серый для градаций черного */
-	--accent: #A5A27C;        /* Классическое золото (Royal Gold) — для акцентов, кнопок и иконок */
-	--light: #F5F5F5;         /* Светлый фон — для текста или блоков */
-	--dark: #0d0d0d;          /* Глубокий тень/фон */
-	--gray: #A0AEC0;          /* Светло-серый — вторичный текст */
-	--success: #38A169;       /* Зеленый — подтверждение, может остаться универсальным */
-	--danger: #E63946;        /* Красный — ошибки */
+	--primary: #000000;
+	/* Глубокий черный — основной фон, строгий и элегантный */
+	--secondary: #1a1a1a;
+	/* Темно-серый для градаций черного */
+	--accent: #A5A27C;
+	/* Классическое золото (Royal Gold) — для акцентов, кнопок и иконок */
+	--light: #F5F5F5;
+	/* Светлый фон — для текста или блоков */
+	--dark: #0d0d0d;
+	/* Глубокий тень/фон */
+	--gray: #A0AEC0;
+	/* Светло-серый — вторичный текст */
+	--success: #38A169;
+	/* Зеленый — подтверждение, может остаться универсальным */
+	--danger: #E63946;
+	/* Красный — ошибки */
 }
 
 
@@ -322,7 +330,7 @@ h1 {
 .benefits-container {
 	display: flex;
 	align-items: center;
-	justify-content: center;	
+	justify-content: center;
 	gap: 50px;
 }
 
@@ -836,8 +844,13 @@ h1 {
 	color: var(--primary);
 }
 
-.info-content p {
+.info-content p,
+.info-content a {
 	color: var(--gray);
+}
+.info-content p:hover,
+.info-content a:hover {
+	color: var(--accent);
 }
 
 .map {
@@ -1297,27 +1310,32 @@ footer {
 }
 
 @keyframes fadeIn {
-	from { opacity: 0; }
-	to { opacity: 1; }
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
 }
 
 /* Адаптация для мобильных */
 @media (max-width: 768px) {
 	.services-pro-tabs {
-		 flex-direction: column;
-		 border-bottom: none;
+		flex-direction: column;
+		border-bottom: none;
 	}
-	
+
 	.tab-btn {
-		 border-bottom: 1px solid #e2e8f0;
-		 text-align: center;
+		border-bottom: 1px solid #e2e8f0;
+		text-align: center;
 	}
-	
+
 	.tab-btn:after {
-		 display: none;
+		display: none;
 	}
-	
+
 	.tab-btn.active {
-		 background-color: var(--light);
+		background-color: var(--light);
 	}
 }
