@@ -22,8 +22,6 @@
 						<li><a href="#services">Услуги</a></li>
 						<li><a href="#benefits">Преимущества</a></li>
 						<li><a href="#process">Как мы работаем</a></li>
-						<li><a href="#results">Результаты</a></li>
-						<li><a href="#testimonials">Отзывы</a></li>
 						<li><a href="#contact">Контакты</a></li>
 					</ul>
 				</nav>
@@ -194,11 +192,6 @@
 					вашего бизнеса</p>
 
 				<div class="benefits-container">
-					<!-- <div class="benefits-image">
-						<img
-							src="ruk.png"
-							alt="Преимущества работы с нами">
-					</div> -->
 					<div class="benefits-content">
 						<div class="benefits-list">
 							<div class="benefit-item">
@@ -481,25 +474,28 @@
 					<div class="contact-form">
 						<h3 class="form-title">Оставьте заявку</h3>
 						<form>
+							<input type="hidden" name="project_name" value="Safe Hands">
+							<input type="hidden" name="admin_email" value="qsamur@gmail.com">
+							<input type="hidden" name="form_subject" value="Заявка">
 							<div class="form-group">
-								<label for="name">Ваше имя</label>
-								<input type="text" id="name" placeholder="Иван Иванов" required>
+								<label for="formName">Ваше имя</label>
+								<input type="text" id="formName" name="name" placeholder="Иван Иванов" required>
 							</div>
 							<div class="form-group">
 								<label for="company">Компания</label>
-								<input type="text" id="company" placeholder="Название компании">
+								<input type="text" id="company" name="company" placeholder="Название компании">
 							</div>
 							<div class="form-group">
 								<label for="phone">Телефон</label>
-								<input type="tel" id="phone" placeholder="+7 (999) 123-45-67" required>
+								<input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67" required>
 							</div>
 							<div class="form-group">
 								<label for="email">Email</label>
-								<input type="email" id="email" placeholder="ivan@company.ru" required>
+								<input type="email" id="email" name="email" placeholder="ivan@company.ru" required>
 							</div>
 							<div class="form-group">
 								<label for="service">Интересующая услуга</label>
-								<select id="service">
+								<select id="service" name="service">
 									<option value="">Выберите услугу</option>
 									<option value="recruitment">Рекрутинг персонала</option>
 									<option value="outsourcing">Аутсорсинг персонала</option>
@@ -510,7 +506,7 @@
 							</div>
 							<div class="form-group">
 								<label for="message">Сообщение</label>
-								<textarea id="message"
+								<textarea id="message" name="message"
 									placeholder="Опишите ваши потребности (должность, требования, сроки)"></textarea>
 							</div>
 							<button type="submit" class="btn">Отправить заявку</button>
@@ -533,8 +529,8 @@
 							</div>
 							<div class="info-content">
 								<h3>Телефон</h3>
-								<p>+7 (495) 123-45-67</p>
-								<p>+7 (800) 123-45-67 (бесплатно по РФ)</p>
+								<a href="tel:+7(495)-969-15-12">+7 (495)-969-15-12</a>
+								<a href="tel:+7(903)-969-15-12">+7 (903)-969-15-12</a>
 							</div>
 						</div>
 						<div class="info-item">
@@ -559,9 +555,9 @@
 						</div>
 						<div class="map">
 							<iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.741789380498!2d37.399388!3d55.726333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQzJzM0LjgiTiAzN8KwMjMnNTcuOCJF!5e0!3m2!1sru!2s!4v1620000000000!5m2!1sru!2s"
-    allowfullscreen="" loading="lazy">
-</iframe>
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.741789380498!2d37.399388!3d55.726333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQzJzM0LjgiTiAzN8KwMjMnNTcuOCJF!5e0!3m2!1sru!2s!4v1620000000000!5m2!1sru!2s"
+								allowfullscreen="" loading="lazy">
+							</iframe>
 						</div>
 					</div>
 				</div>
